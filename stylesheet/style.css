@@ -490,7 +490,6 @@ h4 {
 
 /* sec_info_account */
 .sec_info_account {
-	height: 100vh;
 }
 
 .sec_info_account .side-bar {
@@ -510,11 +509,11 @@ h4 {
 }
 
 .sec_info_account .side-bar .menu-account {
-  padding: 25px;
+  padding: 25px 0;
 }
 
 .sec_info_account .side-bar .menu-account ul li {
-  margin-bottom: 28px;
+
 }
 
 .sec_info_account .side-bar .menu-account ul li a {
@@ -524,6 +523,13 @@ h4 {
   line-height: 18px;
   font-weight: 500;
 	display: block;
+	padding: 14px 20px;
+}
+
+.sec_info_account .side-bar .menu-account ul li a:hover,
+.sec_info_account .side-bar .menu-account ul li.active a {
+	color: #3466E6;
+	background: #5887fe1a;
 }
 
 .sec_info_account .side-bar .menu-account ul li a img {
@@ -548,6 +554,7 @@ color: #B8B9BF;
   border-bottom: 1px solid #eee;
   width: 100%;
   padding: 15px 20px;
+  background: #F9F9F9;
 }
 
 .sec_info_account .info-account .top-bar .title {
@@ -616,6 +623,7 @@ color: #B8B9BF;
 	border: none;
 	margin-bottom: 0;
 	padding: 0 8px;
+	background-color: transparent;
 }
 
 .sec_info_account .info-account .account-container {
@@ -724,6 +732,242 @@ margin-bottom: 0;
   	line-height: 36px;
   	display: inline-block;
   }
+
+/* Search Container */
+.search-container {
+	padding: 20px;
+}
+
+.search-container .box-search {
+	width: 600px;
+	max-width: 100%;
+}
+
+.search-container .box-search .top-search {
+	position: relative;
+}
+
+.search-container .box-search .top-search input {
+	height: 36px;
+}
+
+.search-container .box-search .top-search button {
+	background-color: transparent;
+	width: 44px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0;
+	z-index: 5;
+}
+
+.tab-container .menu-tab {
+	padding: 0 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.tab-container .menu-tab li {
+	cursor: pointer;
+	display: inline-block;
+	padding-bottom: 10px;
+	font-size: 13px;
+color: #5F606D;
+letter-spacing: 0;
+line-height: 20px;
+font-weight: 500;
+margin-right: 30px;
+transition: 0.3s;
+border-bottom: 3px solid transparent;
+}
+
+.tab-container .menu-tab li span {
+	display: inline-block;
+	width: 28px;
+	height: 18px;
+	line-height: 18px;
+	background: #E9EAED;
+border-radius: 10px;
+text-align: center;
+margin-left: 5px;
+
+}
+
+.tab-container .menu-tab li:hover,
+.tab-container .menu-tab li.active {
+	border-color: #3466E6;
+	color: #3466E6;
+}
+
+.tab-container .menu-tab li:hover span,
+.tab-container .menu-tab li.active span {
+	color: #3466E6;
+}
+
+.tab-container .content-tab {
+	padding: 20px;
+	background-color: #f7f8fc;
+}
+
+.tab-container .content-tab .inner-box {
+	background-color: #fff;
+}
+
+.table-logistic {
+	width: 100%;
+	border: 1px solid #E2E2E2;
+	border-radius: 3px 0 0 3px;
+}
+
+.table-logistic th {
+	background-image: linear-gradient(-180deg, #FFFFFF 0%, #F0F0F0 100%);
+border-top: 1px solid #E2E2E2;
+border-bottom: 1px solid #E2E2E2;
+border-radius: 3px 3px 0px 0px;
+padding: 20px 8px;
+font-size: 13px;
+color: #3B3B42;
+letter-spacing: 0;
+line-height: 18px;
+font-weight: bold;
+}
+
+.table-logistic tr td {
+	border-bottom: 1px solid #E2E2E2;
+	padding: 17px 8px;
+}
+
+.table-logistic tr th,
+.table-logistic tr td {
+  position: relative;
+  vertical-align: middle;
+}
+
+.table-logistic tr th input[type="checkbox"],
+.table-logistic tr td input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.table-logistic tr th label,
+.table-logistic tr td label {
+  position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+border: 1px solid #DFDDDD;
+border-radius: 3px;
+vertical-align: middle;
+padding: 0;
+}
+
+.table-logistic tr th input:checked + label,
+.table-logistic tr td input:checked + label {
+  background: url(../images/log/check.svg) center center no-repeat;
+  background-color: #3466E6;
+  border-color: #3466E6
+}
+
+.logistic-pagination {
+	padding: 15px 20px;
+	border: 1px solid #E2E2E2;
+	border-top: none;
+	overflow: hidden;
+}
+
+.logistic-pagination .result {
+	float: left;
+	font-size: 13px;
+color: #5F606D;
+line-height: 34px;
+}
+
+.logistic-pagination .pagination {
+	float: right;
+}
+
+.logistic-pagination .pagination ul li {
+	display: inline-block;
+	margin: 0 3px;
+}
+
+.logistic-pagination .pagination ul li a {
+	display: block;
+	border: 1px solid #E2E2E2;
+	width: 34px;
+	height: 34px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 15px;
+color: #505057;
+border-radius: 50%;
+}
+
+.logistic-pagination .pagination ul li a:hover,
+.logistic-pagination .pagination ul li.active a {
+	color: #fff;
+	background-color: #3466E6;
+	border-color: #3466E6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Preloader
 -------------------------------------------------------------- */

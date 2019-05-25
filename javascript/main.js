@@ -111,21 +111,82 @@
   //   }
   // };
 
-  var showSignUp = function() {
-    var showSignUp = $('li.sign-up a');
-    showSignUp.on('click', function(e) {
-      e.stopPropagation();
-      $(this).closest('.boxed').children('.box-sign-up').addClass('open');
-      $('body').append('<div class="overlay"></div>');
-    });
-    $('.box-sign-up').on('click', function(e) {
-      e.stopPropagation();
-    });
-    $('body').on('click', function() {
-      $('.boxed').children('.box-sign-up').removeClass('open');
-      $('.overlay').remove();
-    })
-  }; // Show Search Button
+  var tabLogistic = function() {
+        $('.tab-container').each(function() {
+            $('.menu-tab').children('li').first().addClass('active');
+            $(this).children('.content-tab').children().hide();
+            $(this).children('.content-tab').children().first().show();
+            $(this).find('.menu-tab').children('li').on('click', function(e) {
+                var liActive = $(this).index(),
+                    contentActive = $(this).siblings().removeClass('active').parents('.tab-container').children('.content-tab').children().eq(liActive);
+
+                contentActive.addClass('active').fadeIn('slow');
+                contentActive.siblings().removeClass('active');
+                $(this).addClass('active').parents('.tab-container').children('.content-tab').children().eq(liActive).siblings().hide();
+                e.preventDefault();
+            });
+        });
+    };
+
+    var CheckboxShowHideAll = function(){
+         // Set check or unchecked all checkboxes
+    $('#chckHead').click(function () {
+       var checkboxes = $('.chcktbl');
+     
+       if (this.checked) {
+         for (var i = 0; i < checkboxes.length; i++) { 
+           checkboxes[i].checked = true;
+         }
+       } else {
+         for (var i = 0; i < checkboxes.length; i++) {
+           checkboxes[i].checked = false;
+         }
+       }
+     });
+
+    $('#a-chckHead').click(function () {
+       var checkboxes = $('.a-chcktbl');
+     
+       if (this.checked) {
+         for (var i = 0; i < checkboxes.length; i++) { 
+           checkboxes[i].checked = true;
+         }
+       } else {
+         for (var i = 0; i < checkboxes.length; i++) {
+           checkboxes[i].checked = false;
+         }
+       }
+     });
+
+    $('#b-chckHead').click(function () {
+       var checkboxes = $('.b-chcktbl');
+     
+       if (this.checked) {
+         for (var i = 0; i < checkboxes.length; i++) { 
+           checkboxes[i].checked = true;
+         }
+       } else {
+         for (var i = 0; i < checkboxes.length; i++) {
+           checkboxes[i].checked = false;
+         }
+       }
+     });
+
+    $('#c-chckHead').click(function () {
+       var checkboxes = $('.c-chcktbl');
+     
+       if (this.checked) {
+         for (var i = 0; i < checkboxes.length; i++) { 
+           checkboxes[i].checked = true;
+         }
+       } else {
+         for (var i = 0; i < checkboxes.length; i++) {
+           checkboxes[i].checked = false;
+         }
+       }
+     });
+
+    }
 
   var removePreloader = function() {
     $('.box-change-pw').hide();
@@ -153,6 +214,8 @@
 
   // Dom Ready
   $(function() {
+    tabLogistic();
+    CheckboxShowHideAll();
     removePreloader();
   });
 
