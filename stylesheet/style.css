@@ -226,7 +226,7 @@ input[type="reset"]:hover,
 input[type="submit"]:hover,
 button:hover i:before {
   border-color: ;
-  background-color: #0a3bbb;
+  background-color: #D23837;
 }
 
 select,
@@ -495,6 +495,7 @@ h4 {
 .sec_info_account .side-bar {
   width: 270px;
 	position: relative;
+  min-height: 100vh;
   box-shadow: 0 4px 30px 0 rgba(29, 29, 33, 0.15);
 }
 
@@ -532,6 +533,22 @@ h4 {
 	background: #5887fe1a;
 }
 
+.sec_info_account .side-bar .menu-account ul li a .hover,
+.sec_info_account .side-bar .menu-account ul li a .hover {
+  display: none;
+}
+
+
+.sec_info_account .side-bar .menu-account ul li a:hover .normal,
+.sec_info_account .side-bar .menu-account ul li.active a .normal {
+  display: none;
+}
+
+.sec_info_account .side-bar .menu-account ul li a:hover .hover,
+.sec_info_account .side-bar .menu-account ul li.active a .hover {
+  display: inline-block;
+}
+
 .sec_info_account .side-bar .menu-account ul li a img {
   margin-right: 15px;
 }
@@ -563,6 +580,17 @@ color: #B8B9BF;
 	letter-spacing: 0;
 	line-height: 30px;
 	float: left;
+}
+
+.sec_info_account .info-account .top-bar .title a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #E2E2E2;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 5px;
 }
 
 .sec_info_account .info-account .top-bar .box-control {
@@ -626,7 +654,8 @@ color: #B8B9BF;
 	background-color: transparent;
 }
 
-.sec_info_account .info-account .account-container {
+.sec_info_account .info-account .account-container,
+.info-logistic-detail {
 	background-color: #f7f8fc;
 	padding: 20px;
 }
@@ -912,9 +941,136 @@ border-radius: 50%;
 	border-color: #3466E6;
 }
 
+/* info-logistic-detail */
+.info-logistic-detail .detail-box {
+  border: 1px solid #E2E2E2;
+border-radius: 3px;
+overflow: hidden;
+background: #fff;
+}
 
+.info-logistic-detail .detail-box .title {
+font-size: 13px;
+color: #3B3B42;
+letter-spacing: 0;
+font-weight: bold;
+position: relative;
+padding: 13px 20px;
+background: #fff;
+line-height: 24px;
+}
 
+.info-logistic-detail .detail-box .title:before {
+  content: '';
+  position: absolute;
+  height: 34px;
+  width: 6px;
+  background: #D23837;
+  top: 0;
+  bottom: 0;
+  left: -3px;
+  margin: auto;
+  border-radius: 6px;
+}
 
+.info-logistic-detail .detail-box .title .icon-down {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #E2E2E2;
+  line-height: 20px;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.info-logistic-detail .detail-box .title.active .icon-down {
+  transform: rotate(180deg);
+}
+
+.info-logistic-detail .detail-box .table-info-logistic tr td:first-child {
+  width: 40%;
+}
+
+.info-logistic-detail .detail-box .table-info-logistic tr td {
+  padding: 12px 15px;
+  border-top: 1px solid #E2E2E2;
+}
+
+.info-logistic-detail .detail-box .table-info-logistic .waitting {
+  color: #AD4900;
+}
+
+.info-logistic-detail .detail-box .table-info-logistic .transfer {
+  color: #3466E6;
+}
+
+.info-logistic-detail .detail-box .table-info-logistic .finish {
+  color: #01A53F;
+}
+
+.btn-confirm {
+  text-align: center;
+  padding: 12px 20px;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.btn-confirm a {
+  display: inline-block;
+  width: 217px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: #3466E6;
+box-shadow: 0 2px 4px 0 rgba(90,60,60,0.05);
+border-radius: 18px;
+color: #fff;
+}
+
+.btn-confirm a:hover {
+  background: #D23837;
+}
+
+.box-confirm-order {
+  position: fixed;
+  width: 427px;
+  max-width: 100%;
+  padding: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  margin-left: -214px;
+  background: #FFFFFF;
+box-shadow: 0 4px 30px 0 rgba(29,29,33,0.15);
+border-radius: 8px;
+opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1050;
+}
+
+.box-confirm-order.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.box-confirm-order .delete {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.box-confirm-order h4 {
+  margin: 10px 0 10px;
+  font-size: 18px;
+color: #333333;
+letter-spacing: 0;
+line-height: 30px;
+}
 
 
 
