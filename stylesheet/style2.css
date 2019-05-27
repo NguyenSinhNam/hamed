@@ -1,0 +1,99 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+.colorRed {
+    color: #D23837;
+}
+
+.colorOrange {
+    color: #AD4900;
+}
+
+.colorBlue {
+    color: #3466E6;
+}
+
+.font13 {
+    font-size: 13px;
+}
+
+.color3B3B42 {
+    color: #3B3B42;
+}
+
+.mgTop20 {
+    margin-top: 20px;
+}
+
+.width30 {
+    width: 30% !important;
+}
+
+.width100 {
+    width: 100% !important;
+}
+
+.tdfirstwidth20 tr td:first-child {
+    width: 20% !important;
+}
+
+.textUnderline {
+    text-decoration: underline;
+}
+
+.fontWeight500{
+    font-weight: 500;
+}
+
+.borderBottomNone {
+    border-bottom: none !important;
+}
+
+.table-account .table-logistic tr td a.default {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    height: auto;
+    width: auto;
+    line-height: normal;
+    text-align: unset;
+    display: inline;
+}
+
+.info-logistic-detail .detail-box .title .count {
+    display: inline-block;
+    float: right;
+    font-size: 13px;
+    color: #3B3B42;
+    text-align: right;
+    font-weight: 400;
+    text-transform: none;
+}
+
+
+.edit {    
+    border: 1px solid #E2E2E2;
+    border-radius: 18px;
+    display: inline-block;
+    font-size: 11px;
+    width: 103px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.title .edit {
+    float: right;
+    margin-right: 10px;
+}
+
+
+.tab-container .menu-tab li {
+    padding-bottom: 15px;
+}
+
+.tab-container .menu-tab {
+    padding: 15px 20px 0 20px;
+}
+
