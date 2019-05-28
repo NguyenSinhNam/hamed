@@ -51,7 +51,7 @@
                         <li>
                             <a href="tong-quan.html"><img src="images/tongquan-df.svg" class="normal" alt=""><img src="images/tongquan-active.svg" class="hover" alt=""> Tổng quan</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="kho-hang.html"><img src="images/khohang-df.svg" class="normal" alt=""><img src="images/khohang-active.svg" class="hover" alt=""> Kho hàng</a>
                         </li>
                         <li>
@@ -60,11 +60,11 @@
                         <li>
                             <a href="giao-hang-cho-dieu-van.html"><img src="images/giaohang-df.svg" class="normal" alt=""> <img src="images/giaohang-active.svg" class="hover" alt=""> Giao hàng cho điều vận</a>
                         </li>
-                        <li class="has-submenu">
+                        <li class="has-submenu active">
                             <a href="#"><img src="images/khohanghethong-df.svg" class="normal" alt=""> <img src="images/khohanghethong-active.svg" class="hover" alt=""> Tài Kho hàng hệ thống</a>
                             <ul class="submenu">
                                 <li><a href="kho-hang-he-thong.html">Danh sách Logistics</a></li>
-                                <li><a href="kho-hang-he-thong-lo-ky-gui.html">Danh sách lô ký gửi</a></li>
+                                <li class="active"><a href="kho-hang-he-thong-lo-ky-gui.html">Danh sách lô ký gửi</a></li>
                             </ul>
                         </li>
                         <li>
@@ -78,7 +78,7 @@
             </div>
             <div class="info-account">
                 <div class="top-bar">
-                    <h2 class="title uppercase"><a href="kho-hang-chi-tiet.html"><img src="images/arrow-back-page.svg" alt=""></a>Tên hàng hoá 01</h2>
+                    <h2 class="title">Danh sách lô ký gửi</h2>
                     <div class="box-control">
                         <div class="notification">
                             <span class="icon"><img src="images/log/notification.svg" alt=""></span>
@@ -98,82 +98,77 @@
                         </div>
                     </div>
                 </div>
-                <div class="info-logistic-detail">
-                  <div class="row"> 
-                    <div class="col-sm-12">
-                      <div class="detail-box">
-                        <div class="title uppercase">
-                          Thông tin hàng hoá <span class="icon-down"><img src="images/arrow-collapse-down.svg" alt=""></span> <a class="uppercase colorBlue edit" href="chi-tiet-hang-trong-mot-kho-hang-chinh-sua.html">Sửa thông tin</a>
+                <div class="table-account height100 color3B3B42">
+                    <div class="wrap-logistics-deposit">
+                        <div class="box-title mb20 uppercase inline-block">Logistics ký gửi</div>
+                        <div class="wrap-filter ml40 inline-block">
+                            <select class="filter-deposit" name="filter_deposit">
+                                <option value="">Lô hàng ký gửi sắp hết hạn</option>
+                                <option value="">Tất cả lô hàng ký gửi</option>                                
+                            </select>
                         </div>
-                        <div class="detail-content">
-                          <table class="table-info-logistic font13 width100">
-                            <tbody class="tdfirstwidth20 font13 color3B3B42">
-                              <tr>
-                                <td>Mã hàng hoá:</td>
-                                <td>MH01</td>
-                              </tr>
-                              <tr>
-                                <td>Loại hàng hoá:</td>
-                                <td>Loại hàng hoá 01</td>
-                              </tr>
-                              <tr>
-                                <td>Tên hàng hoá:</td>
-                                <td>Tên hàng hoá 01</td>
-                              </tr>
-                              <tr>
-                                <td>Ngày hết hạn:</td>
-                                <td><strong>19/04/2019</strong> lúc <strong>09:00</strong></td>
-                              </tr>
-                              <tr>
-                                <td>Serial:</td>
-                                <td>-</td>
-                              </tr>
-                              <tr>
-                                <td>Lô:</td>
-                                <td>NBA/123</td>
-                              </tr>
-                              <tr>
-                                <td>Xuất xứ:</td>
-                                <td>Việt Nam</td>
-                              </tr>
-                              <tr>
-                                <td>Số lượng cảnh báo tồn kho:</td>
-                                <td>10</td>
-                              </tr>
-                              <tr>
-                                <td>Giá vốn:</td>
-                                <td><strong class="colorRed">13.000</strong> đ</td>
-                              </tr>
-                              <tr>
-                                <td>Giá nhập:</td>
-                                <td><strong class="colorRed">15.000</strong> đ</td>
-                              </tr>
-                              <tr>
-                                <td>Giá xuất:</td>
-                                <td><strong class="colorRed">30.000</strong> đ</td>
-                              </tr>
-                              <tr>
-                                <td>Kích thước:</td>
-                                <td>-</td>
-                              </tr>
-                              <tr>
-                                <td>Bảo hành:</td>
-                                <td>2 năm</td>
-                              </tr>
-                              <tr>
-                                <td>Hạn sử dụng:</td>
-                                <td>10 năm</td>
-                              </tr>
-                              <tr>
-                                <td>Ghi chú:</td>
-                                <td>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</td>
-                              </tr>                              
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
+                        <div class="grid clearfix">                            
+                            <div class="item">
+                                <div class="box-logistic coming-expire">
+                                    <div class="icon-box iconleft clearfix">
+                                        <div class="wrap-icon">
+                                            <div class="icon"><img src="images/sap-het-han.svg" alt="image"></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="title"><a href="kho-hang-he-thong-lo-ky-gui-chi-tiet.html">Logistic B</a></div>
+                                            <div class="text">
+                                                <p>Tổng hàng hoá: 1000</p>
+                                                <p>Ngày hết hạn: 30/05/2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div> 
                     </div>
-                  </div>
+                    <div class="wrap-customer-deposit">
+                        <div class="box-title mb20 uppercase inline-block">Khách hàng ký gửi</div>
+                        <div class="wrap-filter ml40 inline-block">
+                            <select class="filter-deposit" name="filter_deposit">
+                                <option value="">Lô hàng ký gửi sắp hết hạn</option>
+                                <option value="">Tất cả lô hàng ký gửi</option>
+                            </select>
+                        </div>
+                        <div class="grid clearfix">
+                            <div class="item">
+                                <div class="box-logistic coming-expire">
+                                    <div class="icon-box iconleft clearfix">
+                                        <div class="wrap-icon">
+                                            <div class="icon"><img src="images/sap-het-han.svg" alt="image"></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="title"><a href="kho-hang-he-thong-lo-ky-gui-chi-tiet.html">Nguyễn Văn Nam</a></div>
+                                            <div class="text">
+                                                <p>Tổng hàng hoá: 1000</p>
+                                                <p>Ngày hết hạn: 30/05/2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box-logistic coming-expire">
+                                    <div class="icon-box iconleft clearfix">
+                                        <div class="wrap-icon">
+                                            <div class="icon"><img src="images/sap-het-han.svg" alt="image"></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="title"><a href="kho-hang-he-thong-lo-ky-gui-chi-tiet.html">Văn Duy Tôn</a></div>
+                                            <div class="text">
+                                                <p>Tổng hàng hoá: 1000</p>
+                                                <p>Ngày hết hạn: 30/05/2019</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div> 
+                    </div>                   
                 </div>
             </div>
         </section>

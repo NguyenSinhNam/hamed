@@ -1175,7 +1175,8 @@ font-weight: bold;
 margin-bottom: 5px;
 }
 
-.create-logistic-container input {
+.create-logistic-container input,
+.create-logistic-container select {
   height: 36px;
 }
 

@@ -249,6 +249,17 @@
 });
   };
 
+    var sub_menu = function() {
+        $('.menu-account').each(function() {
+            $('li.has-submenu .submenu').hide();
+            $('li.has-submenu > a').on('click', function(e){
+                $(this).closest('li').addClass('active');
+                $(this).siblings().slideToggle();
+                e.stopPropagation();
+            });
+        });
+    };
+
   var removePreloader = function() {
     $('.box-change-pw').hide();
     $(document).on('click', '.bt-change-pw', function() {
@@ -279,6 +290,7 @@
     CheckboxShowHideAll();
     ToggleSlide();
     ShowPopup();
+    sub_menu();
     removePreloader();
   });
 
