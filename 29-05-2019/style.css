@@ -1,0 +1,210 @@
+/* 29/5/2019 */
+.search-container {
+  border-bottom: none;
+}
+
+.table-logistic tr td .price {
+  color: #D23837;
+  font-weight: 500;
+}
+
+.table-logistic tr th:first-child,
+.table-logistic tr td:first-child {
+  width: 60px;
+  text-align: center;
+}
+
+.unit {
+  text-decoration: underline;
+}
+
+.table-info-logistic .price-debit {
+  color: #D23837;
+  font-weight: 500;
+}
+
+.debit-detail {
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.debit-detail .detail-box {
+  border-bottom: none;
+}
+
+.table-logistic,
+.logistic-pagination {
+  background-color: #fff;
+}
+
+.box-create-accountant {
+  position: fixed;
+  width: 620px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  margin-left: -310px;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 30px 0 rgba(29,29,33,0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1050;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.box-create-accountant.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.box-create-accountant .title {
+  font-size: 15px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 23px;
+font-weight: bold;
+background: #3466E6;
+padding: 18px 20px;
+position: relative;
+}
+
+.box-create-accountant .title .delete {
+  float: right;
+  cursor: pointer;
+}
+
+.box-create-accountant .content {
+  padding: 20px;
+}
+
+.box-create-accountant .content label {
+  font-size: 13px;
+color: #3B3B42;
+letter-spacing: 0;
+line-height: 18px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.box-create-accountant .content input,
+.box-create-accountant .content select {
+  height: 36px;
+}
+
+.box-create-accountant .btn-submit-form {
+  padding: 12px 20px;
+  background: #F7F8FC;
+  text-align: center;
+}
+
+.box-create-accountant .btn-submit-form a,
+.box-create-accountant .btn-submit-form button {
+  display: inline-block;
+  width: 100px;
+  margin: 0 5px;
+  padding: 0;
+  line-height: 36px;
+  height: 36px;
+}
+
+.box-create-accountant .btn-submit-form a.close-form {
+  font-size: 13px;
+letter-spacing: 0;
+font-weight: 500;
+background: #FFFFFF;
+border: 1px solid #DFDDDD;
+border-radius: 18px;
+}
+
+.box-create-accountant .btn-submit-form a.close-form:hover {
+  background-color: #D23837;
+  color: #fff;
+  border-color: #D23837;
+}
+
+.table-accountant {
+  padding: 20px;
+  background-color: #f7f8fc;
+}
+
+
+/* ============= */
+.colorBlue {
+    color: #3466E6;
+}
+
+.waiting {
+  color: #AD4900;
+}
+
+.processing {
+  color: #3466E6;
+}
+
+.complete {
+  color: #079D41;
+}
+
+select {    
+    font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    border: none;
+    margin-bottom: 0;
+    padding: 0 8px;
+    background: transparent;
+    color: #A1A1A9;
+    font-weight: unset;
+    min-width: unset;
+    -webkit-appearance:menulist;
+    -moz-appearance:menulist;
+    appearance:menulist;
+} 
+
+.create-account-ql .detail-box  {
+    background: transparent;
+
+}
+
+.create-account-ql .create-logistic-container {
+    height: auto;
+}
+
+.create-account-ql .detail-content {
+    height: calc(100vh - 214px);
+}
+
+.bdt-none{
+    border-top: none !important;;
+}
+
+.bdr-none{
+    border-right: none !important;
+}
+
+.bdl-none{
+    border-left: none !important;
+}
+
+.bdb-none{
+    border-bottom: none !important;
+}
+
+.bdr1 {
+    border-right: 1px solid #E2E2E2;
+}
+
+.bdl1 {
+    border-left: 1px solid #E2E2E2;
+}
+
+.sec_info_account.create-account-ql .info-account {
+    background: #f7f8fc;
+}

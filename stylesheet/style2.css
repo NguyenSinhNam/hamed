@@ -273,7 +273,7 @@
     margin-left: 40px;
 }
 
-select {
+ select {
     background: #FFFFFF;
     border: 1px solid #E2E2E2;
     border-radius: 18px;
@@ -291,7 +291,7 @@ select {
     background-position:  calc(100% - 15px);
     background-repeat: no-repeat;
     margin-bottom: 0;
-}
+} 
 
 .filter-deposit {
     background: #FFFFFF;
@@ -357,4 +357,83 @@ select {
 
 .box-logistic.expire {
     border-color: #D23837;
+}
+
+/* 29-05 */
+.colorBlue {
+    color: #3466E6;
+}
+
+.waiting {
+  color: #AD4900;
+}
+
+.processing {
+  color: #3466E6;
+}
+
+.complete {
+  color: #079D41;
+}
+
+select {    
+    font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    border: none;
+    margin-bottom: 0;
+    padding: 0 8px;
+    background: transparent;
+    color: #A1A1A9;
+    font-weight: unset;
+    min-width: unset;
+    -webkit-appearance:menulist;
+    -moz-appearance:menulist;
+    appearance:menulist;
+} 
+
+.create-account-ql .detail-box  {
+    background: transparent;
+
+}
+
+.create-account-ql .create-logistic-container {
+    height: auto;
+}
+
+.create-account-ql .detail-content {
+    height: calc(100vh - 214px);
+}
+
+.bdt-none{
+    border-top: none !important;;
+}
+
+.bdr-none{
+    border-right: none !important;
+}
+
+.bdl-none{
+    border-left: none !important;
+}
+
+.bdb-none{
+    border-bottom: none !important;
+}
+
+.bdr1 {
+    border-right: 1px solid #E2E2E2;
+}
+
+.bdl1 {
+    border-left: 1px solid #E2E2E2;
+}
+
+.sec_info_account.create-account-ql .info-account {
+    background: #f7f8fc;
 }
