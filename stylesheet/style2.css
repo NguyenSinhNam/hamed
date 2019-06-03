@@ -437,3 +437,372 @@ select {
 .sec_info_account.create-account-ql .info-account {
     background: #f7f8fc;
 }
+
+/* 02-06-2019 */
+
+.colorGreen {
+    color: #079D41;
+}
+
+.filter-orders {
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 18px;
+    font-size: 13px;
+    color: #3B3B42;
+    line-height: 1;
+    font-weight: 700;
+    padding: 10px 15px;
+    height: auto;
+    min-width: 200px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background-image: url('../images/arrow-input.svg');
+    background-position:  calc(100% - 15px);
+    background-repeat: no-repeat;
+}
+
+.mgt-7{
+    margin-top: -7px;
+}
+
+.bd-none {
+    border: none !important;
+}
+
+.height-auto {
+    height: auto !important;
+}
+
+.create-logistic-container select:invalid {
+    color: #A1A1A9;
+    font-weight: 400;
+}
+
+.create-logistic-container select {
+    background: #FFFFFF;
+    border: 1px solid #DFDDDD;
+    border-radius: 18px;
+    font-size: 13px;
+    color: #3B3B42;
+    line-height: 1;
+    font-weight: 700;
+    padding: 10px 15px;
+    height: auto;
+    min-width: auto;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background-image: url('../images/arrow-input.svg');
+    background-position:  calc(100% - 15px);
+    background-repeat: no-repeat;
+}
+
+.create-logistic-container input,
+.create-logistic-container textarea {
+    color: #3B3B42;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.show-or-hide.show {
+    display: block;
+}
+
+.show-or-hide.hide {
+    display: none;
+}
+
+.wrap-form-search-goods {
+    width: 380px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #DFDDDD;
+}
+
+.form-search-goods {
+    position: relative;
+}
+
+.form-search-goods input {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-right: 60px;
+    border: none;
+}
+
+.form-search-goods .submit {
+    width: 60px;
+    height: 100%;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: none;
+}
+
+
+.detail-box .sub-title .delete-all {
+    font-weight: 400;
+    font-size: 13px;
+    color: #717286;
+    margin-right: 15px;
+}
+
+.detail-box .sub-title .delete-all img {
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.order-detail .detail-child .delete-item {
+    float: right;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.detail-box .detail-child .item:last-child {
+    border-bottom: none;
+}
+
+.pd20 {
+    padding: 20px;
+}
+
+.box-info-customer {
+    position: relative;    
+    min-height: 40px;
+}
+
+.box-info-customer .avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.box-info-customer .content {
+    padding-left: 50px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box-info-customer .content .name {
+    font-size: 13px;
+    color: #3B3B42;
+    font-weight: 700;
+    float: left;
+}
+
+.box-info-customer .content .history {
+    float: right;
+    font-size: 13px;
+    color: #717286;
+}
+
+.box-info-customer .content .history img {
+    margin-right: 5px;
+}
+
+.table-info-customer thead {
+    font-size: 11px;
+    color: #5F606D;
+    text-transform: uppercase;
+    line-height: 18px;
+}
+
+.table-info-customer tbody {
+    font-size: 13px;
+    color: #3B3B42;
+    line-height: 18px;
+}
+
+.mgb10 {
+    margin-bottom: 10px;
+}
+
+.mgb15 {
+    margin-bottom: 15px;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.title-page {
+    font-size: 13px;
+    color: #3B3B42;
+    letter-spacing: 0;
+    font-weight: bold;
+    position: relative;    
+    background: #fff;
+    line-height: 24px;
+    border: 1px solid #E2E2E2;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.title-page:before {
+    content: '';
+    position: absolute;
+    height: 34px;
+    width: 6px;
+    background: #D23837;
+    top: 0;
+    bottom: 0;
+    left: -3px;
+    margin: auto;
+    border-radius: 6px;
+}
+
+.title-page span.bt {
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #F0F0F0 100%);
+    display: inline-block;
+    padding: 18px 21px;
+    font-size: 11px;
+}
+
+.title-page strong.bt {
+    padding: 0px 21px;
+}
+
+.wrap-btn {
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.wrap-btn a {
+    display: inline-block;
+    width: 217px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #3466E6;
+    box-shadow: 0 2px 4px 0 rgba(90, 60, 60, 0.05);
+    border-radius: 18px;
+    color: #fff;
+}
+
+.wrap-btn a:hover {
+    background: #D23837;
+}
+
+.bgGray {
+    background: #BEC3CF !important;
+}
+
+a.bgGray:hover {
+    background: #D23837 !important;
+}
+
+.mgl5 {
+    margin-left: 5px;
+}
+
+.mgr5 {
+    margin-right: 5px;
+}
+
+.mgl10 {
+    margin-left: 10px;
+}
+
+.mgr10{
+    margin-right: 10px;
+}
+
+.mgl15 {
+    margin-left: 15px;
+}
+
+.mgr15{
+    margin-right: 15px;
+}
+
+.mgl20 {
+    margin-left: 20px;
+}
+
+.mgr20{
+    margin-right: 20px;
+}
+
+.select-approved-results {
+    background: #FFFFFF;
+    border: 1px solid #DFDDDD;
+    border-radius: 18px;
+    font-size: 13px;
+    color: #3B3B42;
+    line-height: 1.3;
+    font-weight: 700;
+    padding: 0px 15px;
+    height: auto;
+    min-width: auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/arrow-input.svg);
+    background-position: calc(100% - 15px);
+    background-repeat: no-repeat;
+}
+
+ .pdl15  {
+    padding-left: 15px !important;
+}
+
+.pdr15 {
+    padding-right: 15px !important;
+} 
+
+.pd0 {
+    padding: 0 !important;
+}
+
+.fontWeight600{
+    font-weight: 600;
+}
+
+.fontWeight700{
+    font-weight: 700;
+}
+
+.colorBlack {
+    color:  #3B3B42;
+}
+
+input[type="text"]:disabled {
+  background: #F7F8FC;
+}
+
+.mgb0 {
+    margin-bottom: 0px !important;
+}
+
+ .create-loan .status {
+    color: #079D41;
+    line-height: 1.3;
+}
+
+.create-loan .status span {
+    color: #000000;
+    font-weight: 400;
+} 
+

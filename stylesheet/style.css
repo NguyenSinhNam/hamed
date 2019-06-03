@@ -1162,7 +1162,7 @@ h4 {
   background: #fff;
   border: 1px solid #E2E2E2;
   border-radius: 3px;
-  height: calc(100vh - 160px);
+  /* height: calc(100vh - 160px); */
 }
 
 .create-logistic-container label {
@@ -1752,7 +1752,7 @@ height: 48px;
   margin-bottom: 0;
   height: 48px;
   width: 100%;
-} 
+}
 
 .search-stock .box-search button {
   position: absolute;
@@ -1777,9 +1777,9 @@ height: 48px;
 
 /* Track */
 .order-detail .detail-child::-webkit-scrollbar-track {
-  background: #fff; 
+  background: #fff;
 }
- 
+
 /* Handle */
 .order-detail .detail-child::-webkit-scrollbar-thumb {
   background: #E2E2E2;
@@ -1789,7 +1789,7 @@ height: 48px;
 
 /* Handle on hover */
 .order-detail .detail-child::-webkit-scrollbar-thumb:hover {
-  background: #c8c8c8; 
+  background: #c8c8c8;
 }
 
 .order-detail .detail-box .total-price {
@@ -1799,7 +1799,165 @@ height: 48px;
 
 
 
+/* 02-06-2019 */
 
+.search-container .box-search .top-search input {
+    padding-right: 50px;
+}
+
+.table-order tr td button {
+  width: 76px;
+  margin-left: 10px;
+}
+
+.detail-box .detail-child .item .list-detail-stock li .amount-stock .input-group .dec, .detail-box .detail-child .item .list-detail-stock li .amount-stock .input-group .inc {
+  width: 50px;
+}
+
+.payed {
+  color: #079D41;
+}
+
+.cancle {
+  color: #AD0000;
+}
+
+select {
+  color: #444444;
+}
+
+.table-account .table-contract tr td a {
+  width: auto;
+  height: auto;
+  border: none;
+  color: #3466E6;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.debt-detail .create-logistic-container {
+  border: none;
+}
+
+.no-border {
+  border: none !important;
+}
+
+
+.create-logistic-container {
+  height: auto;
+}
+
+.warehouse-detail .title a {
+  float: right;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 10px;
+  font-size: 11px;
+color: #3466E6;
+letter-spacing: 0;
+line-height: 16px;
+border: 1px solid #E2E2E2;
+border-radius: 18px;
+}
+
+.warehouse-detail .row textarea {
+  margin-bottom: 0;
+}
+
+.ouput-ware-container .one-half {
+  width: 50%;
+}
+
+.table-out-ware tr td {
+  border-bottom: 1px solid #E2E2E2;
+  padding: 10px 20px;
+  vertical-align: top;
+}
+
+.table-out-ware tr td:nth-child(3) {
+  border-left: 1px solid #e2e2e2;
+}
+
+.table-out-ware tr td select {
+  height: 36px;
+  font-size: 13px;
+  color: #079D41;
+  font-weight: bold;
+  width: 250px;
+  margin-bottom: 0;
+  border: 1px solid #E2E2E2;
+}
+
+.table-out-ware tr td .list-file li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.table-out-ware tr td .list-file li p {
+  margin-top: 5px;
+}
+
+.create-logistic-container .date {
+  position: relative;
+}
+
+.create-logistic-container .date .icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.popup-new-order {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -225px;
+  transform: translateY(-50%);
+  background: #FFFFFF;
+  box-shadow: 0 4px 30px 0 rgba(29,29,33,0.15);
+  border-radius: 8px;
+  width: 550px;
+  max-width: 100%;
+  z-index: 1050;
+  padding: 60px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup-new-order.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-new-order .delete {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.popup-new-order .title {
+  font-size: 18px;
+color: #333333;
+letter-spacing: 0;
+line-height: 30px;
+font-weight: bold;
+margin: 30px 0 15px;
+}
+
+.popup-new-order .content p {
+  font-size: 15px;
+color: #333333;
+letter-spacing: 0;
+text-align: center;
+line-height: 23px;
+}
+
+.popup-new-order .content a {
+  color: #3466E6;
+  text-decoration: underline;
+}
 
 /* Preloader
 -------------------------------------------------------------- */
